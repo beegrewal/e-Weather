@@ -20,70 +20,19 @@
 
     <!--Navbar-->
 
-    <div class="nav">
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Weather Forecast
-                    <lord-icon src="https://cdn.lordicon.com/qtiwxsuo.json" trigger="hover"
-                        colors="primary:#4be1ec,secondary:#cb5eee" style="width:20px;height: 20px;">
-                    </lord-icon>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Weather Forecast<lord-icon
-                                src="https://cdn.lordicon.com/qtiwxsuo.json" trigger="hover"
-                                colors="primary:#4be1ec,secondary:#cb5eee" style="width:40px;height:40px">
-                            </lord-icon></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="team.html" target="_blank">Team
-                                    <lord-icon src="https://cdn.lordicon.com/mjmrmyzg.json" trigger="hover"
-                                        colors="primary:#4be1ec,secondary:#cb5eee" style="width:40px;height:40px">
-                                    </lord-icon> </a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="contact.html" target="_blank">Contact Us
-                                    <lord-icon src="https://cdn.lordicon.com/amxnacxd.json" trigger="hover"
-                                        colors="primary:#4be1ec,secondary:#cb5eee" style="width:40px;height:40px">
-                                    </lord-icon>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Feedback.html" target="_blank">Feedback
-                                    <lord-icon
-                                    src="https://cdn.lordicon.com/sdhhsgeg.json"
-                                    trigger="hover"
-                                    colors="primary:#4be1ec,secondary:#cb5eee"
-                                    style="width:40px;height:40px">
-                                </lord-icon></a>
-                            </li>
-                        </ul>
-                       
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"><img src="weather-forecast-logo.png" alt="weather-forecast-logo" width="250" height=""></a>
+        <form class="d-flex mt-2" role="search">
+            <input id="place" class="form-control me-2" type="search"  placeholder="Search"
+                aria-label="Search">
+            <button class="btn btn_get btn_get_two"  type="submit" id="submit">Search</button>
+        </form>
+      </nav>  
                    
                  
-                        <form class="d-flex mt-5" role="search">
-                            <input id="place" class="form-control me-2" type="search"  placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
-                        </form>
+                       
                         
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+                  
 
 
 
@@ -220,13 +169,14 @@
                             <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
                                 _lpchecked="1">
                                 <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                <button class="btn btn_get btn_get_two" type="submit"><a href="mailto:bantus090@gmail.com" class="btn" target="_blank">Subscribe</a></button>
+                                <button class="btn btn_get btn_get_two" type="submit"><a href="mailto:" class="btn" target="_blank">Subscribe</a></button>
                                 <p class="mchimp-errmessage" style="display: none;"></p>
                                 <p class="mchimp-sucmessage" style="display: none;"></p>
                             </form>
                         </div>
                     </div>
 
+                    
 
                 </div>
             </div>
@@ -238,12 +188,17 @@
         <div class="footer_bottom">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-sm-7">
-                        <p class="mb-0 f_400">© B S Grewal 2023 All rights reserved.</p>
-                    </div>
-                    <div class="col-lg-6 col-sm-5 text-right">
+                  
+                    <div class="col-lg-4 col-sm-5 text-right">
                         <p>Made with <i class="icon_heart"></i> Us <a href="team.html" target="_blank">Our Team</a></p>
 
+                    </div>
+                    <div class="col-lg-4 col-sm-5 text-left">
+                        <p>Give <i class="icon_heart"></i> Us <a href="Feedback.html" target="_blank">Feedback</a></p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-7 text-right">
+                        <p class="mb-0 f_400">© Debugging Crew All rights reserved.</p>
                     </div>
                 </div>
     </footer>
