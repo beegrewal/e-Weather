@@ -13,6 +13,19 @@
 </head>
 
 <body>
+       <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "8bbd695f-64b8-474c-8aae-b3f2ecfe8da0", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "41814d91-9dec-4f68-847c-39886a076b2a", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 
     <!--Preloader-->
     <div class="preloader"></div>
@@ -215,19 +228,7 @@
     <script src="uttarkashi.js"></script>
     <script src="loader.js"></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-   <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "8bbd695f-64b8-474c-8aae-b3f2ecfe8da0", // The ID of this integration.
-    region: "eu-gb", // The region your integration is hosted in.
-    serviceInstanceID: "41814d91-9dec-4f68-847c-39886a076b2a", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
+
    
     </script>
 
